@@ -102,6 +102,7 @@ else { root.insert(key);
 }
 public void inorder() { if(root==null)
 return; else {
+System.out.println();
 System.out.println(); root.inorder();
 }
 }
