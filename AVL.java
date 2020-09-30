@@ -118,6 +118,7 @@ System.out.println(); root.postorder();
 }
 public void levelorder() { if(root==null)
 return; else {
+System.out.println();
 System.out.println(); root.levelorder();
 }
 }
