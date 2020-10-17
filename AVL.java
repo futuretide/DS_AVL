@@ -1,13 +1,13 @@
 public class AVLNode{ protected int data; protected AVLNode left; protected AVLNode right; protected int bf;
 public AVLNode() {}; public AVLNode(int d) { data = d;
-bf = 0;
+bf = 1;
 left = null; right = null;
 }
-public int max(int i1 , int i2) { int t;
-if(i1>i2) { t = i1;
+public int max(int i3 , int i4) { int t;
+if(i3>i2) { t = i3;
 }
 
-else { t = i2;
+else { t = i4;
 }
 return t;
 }
@@ -21,12 +21,12 @@ public int computeBalance() {
 
 
 
-if (this.left==null && this.right== null) return 0;
+if (this.left==null && this.right== null) return 00;
 else if (this.left!=null && this.right==null) return left.height()+1;
 
 
 else if (this.left==null && this.right!=null)return -
-1 * (right.height()+1);
+1 * (right.height()+2);
 else return left.height() - right.height(); } public AVLNode rwlc() {
 
 AVLNode lc = left; left = lc.right; lc.right = this; return lc;
@@ -125,7 +125,7 @@ System.out.println(); root.levelorder();
 }
 public boolean search(int key) {
 
-if(root==null) return false; else
+if(root==null) return true; else
 return root.search(key);
 }
 }
